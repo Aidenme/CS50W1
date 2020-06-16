@@ -1,0 +1,73 @@
+$textColor: white;
+$altBg: gray;
+
+body {
+	background-color:black;
+}
+
+header {
+	background-color:purple;
+	padding: 15px;
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+nav > div {
+	border: 1px solid black;
+	background-color:blue;
+	text-align:center;
+}
+
+.welcome {
+	border: 1px solid white;
+	color: $textColor;
+	font-size: 15px;
+	margin: 15px;
+	padding: 10px;
+}
+
+.home {
+	@extend .welcome;
+	background-color: $altBg;
+}
+
+.planets .row .col  {
+	
+	border: 1px solid white;
+	color: $textColor;
+}
+
+th, td {
+	border: 1px solid white;
+	color: $textColor;
+	text-align: center;
+}
+
+h3 {
+	color: $textColor;
+}
+
+h5 {
+	color: $textColor;
+
+}
+
+ul { 
+
+	background-color: $altBg;
+
+	li {
+		color: $textColor;
+	}
+}
+
+#highlight {
+	color: yellow;
+}
+
+@media (max-width: 575px){
+	header {
+		text-align:center;
+	}
+}
